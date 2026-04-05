@@ -1,7 +1,7 @@
 {
-  "name": "animedoro-backend",
+  "name": "waifudoro-backend",
   "version": "1.0.0",
-  "description": "Animedoro backend — Node.js TypeScript Express + MongoDB native driver",
+  "description": "WaifuDoro backend — Node.js TypeScript Express + MongoDB native driver",
   "main": "dist/server.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
@@ -12,6 +12,7 @@
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
     "cookie-parser": "^1.4.6",
     "cors": "^2.8.5",
     "express": "^4.19.2",

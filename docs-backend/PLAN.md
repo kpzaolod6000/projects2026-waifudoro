@@ -1,7 +1,7 @@
-# Animedoro — Backend Implementation Plan
+# WaifuDoro — Backend Implementation Plan
 
 > **Stack:** Node.js · TypeScript · Express · MongoDB Native Driver · Docker
-> **Audience:** Claude Core or any backend developer implementing the server-side logic for the Animedoro frontend.
+> **Audience:** Claude Core or any backend developer implementing the server-side logic for the WaifuDoro frontend.
 
 ---
 
@@ -22,7 +22,7 @@
 
 ## 1. Project Overview
 
-Animedoro is a gamified Pomodoro productivity app. Users complete focus sessions (work / short break / long break), earn XP, level up, manage tasks, track statistics, and interact with an AI waifu companion (Hina).
+WaifuDoro is a gamified Pomodoro productivity app. Users complete focus sessions (work / short break / long break), earn XP, level up, manage tasks, track statistics, and interact with an AI waifu companion (Hina).
 
 ### Pages & Access Matrix
 
@@ -461,12 +461,12 @@ version: '3.9'
 services:
   mongodb:
     image: mongo:7.0
-    container_name: animedoro_mongo
+    container_name: waifudoro_mongo
     restart: unless-stopped
     environment:
       MONGO_INITDB_ROOT_USERNAME: ${MONGO_ROOT_USER}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGO_ROOT_PASSWORD}
-      MONGO_INITDB_DATABASE: animedoro
+      MONGO_INITDB_DATABASE: waifudoro
     volumes:
       - mongo_data:/data/db
     ports:
@@ -480,7 +480,7 @@ services:
 
   backend:
     build: { context: ., dockerfile: Dockerfile }
-    container_name: animedoro_backend
+    container_name: waifudoro_backend
     restart: unless-stopped
     depends_on:
       mongodb:
@@ -526,7 +526,7 @@ NODE_ENV=development
 # MongoDB
 MONGO_ROOT_USER=admin
 MONGO_ROOT_PASSWORD=supersecretpassword
-DATABASE_URL="mongodb://admin:supersecretpassword@mongodb:27017/animedoro?authSource=admin"
+DATABASE_URL="mongodb://admin:supersecretpassword@mongodb:27017/waifudoro?authSource=admin"
 
 # JWT — min 32 chars each
 JWT_SECRET=your-super-secret-jwt-key-min-32-chars
@@ -605,4 +605,4 @@ npm run dev
 
 ---
 
-*Animedoro v1.0 — March 2026*
+*WaifuDoro v1.0 — March 2026*
