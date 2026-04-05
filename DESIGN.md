@@ -1,4 +1,4 @@
-# Design System: Animedoro / Tasks Page
+# Design System: WaifuDoro / Tasks Page
 **Project ID:** 13210935788954753346
 
 ## 1. Visual Theme & Atmosphere

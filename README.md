@@ -1,4 +1,4 @@
-# Animedoro (WaifuDoro)
+# WaifuDoro
 
 A gamified Pomodoro productivity app with an anime aesthetic. Complete focus sessions, earn XP, and level up your character.
 
@@ -14,7 +14,7 @@ A gamified Pomodoro productivity app with an anime aesthetic. Complete focus ses
 ## Project Structure
 
 ```
-animedoro/
+waifudoro/
 ├── frontend/   # React + Vite SPA
 └── backend/    # Express REST API + MongoDB
 ```

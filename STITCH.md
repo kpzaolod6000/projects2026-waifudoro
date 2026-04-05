@@ -1,4 +1,4 @@
-# Stitch + Agent Skills — Animedoro
+# Stitch + Agent Skills — WaifuDoro
 
 This project is integrated with **Google Labs Stitch** (AI UI design tool) and the **Agent Skills** open standard. The `.stitch/` and `.agents/` directories at the project root are managed by these tools.
 
@@ -7,7 +7,7 @@ This project is integrated with **Google Labs Stitch** (AI UI design tool) and t
 ## Directory Layout
 
 ```
-animedoro/
+waifudoro/
 ├── .stitch/
 │   └── designs/          # Downloaded Stitch design files (.html, .png)
 └── .agents/
@@ -56,7 +56,7 @@ Converts a Stitch screen into modular Vite + React + TypeScript components follo
 
 **Example prompt:**
 ```
-Convert the Tasks screen from the Animedoro Stitch project to React components.
+Convert the Tasks screen from the WaifuDoro Stitch project to React components.
 ```
 
 **Pipeline:**
@@ -75,7 +75,7 @@ Analyzes Stitch screens and generates (or updates) `DESIGN.md` — the project's
 
 **Example prompt:**
 ```
-Analyze the Animedoro Stitch project screens and regenerate DESIGN.md.
+Analyze the WaifuDoro Stitch project screens and regenerate DESIGN.md.
 ```
 
 ---
@@ -111,7 +111,7 @@ Generates a Remotion video walkthrough from Stitch app screens — useful for de
 
 **Example prompt:**
 ```
-Generate a Remotion walkthrough video for the Animedoro app screens from Stitch.
+Generate a Remotion walkthrough video for the WaifuDoro app screens from Stitch.
 ```
 
 ---
@@ -153,4 +153,4 @@ Read next-prompt.md and run the Stitch build loop for the next iteration.
 Downloaded Stitch designs are cached locally under `.stitch/designs/` as `.html` and `.png` files.
 The agent will ask before re-downloading if a cached version already exists.
 
-The current `DESIGN.md` at the project root was generated from the Animedoro Stitch project and is the authoritative source for the visual design system.
+The current `DESIGN.md` at the project root was generated from the WaifuDoro Stitch project and is the authoritative source for the visual design system.
