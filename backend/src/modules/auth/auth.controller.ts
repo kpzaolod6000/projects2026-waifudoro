@@ -12,6 +12,7 @@ const COOKIE_OPTIONS = {
 
 export async function register(req: Request, res: Response, next: NextFunction) {
   try {
+    console.log(req.body);
     const { accessToken, refreshToken, user } = await authService.register(req.body);
     res.cookie(COOKIE_NAME, refreshToken, COOKIE_OPTIONS);
     created(res, { accessToken, user });
